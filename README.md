@@ -10,24 +10,6 @@ Mac OS Catalina Version 10.15.6 <h1>
 Java version 1.8.0_144
 Gradle version 6.6.1 <h1>
 
-## Build Instructions
-
-Clone or download the code from the GitHub repository (https://github.com/sasha-e/nQueenSolution).
-
-Open the Mac terminal.
-
-
-'directory containing nQueenSolution' % cd nQueenSolution
-
-nQueenSolution % cd queenBuild
-
-queenbuild % gradle build
-
-queenBuild % gradle run --args='n'
-
-Note: n can be any value greater or equal to 8.  Values over n=16 will take some time to compute.<h1>
-
-
 ## How to read the displayed solution set
 
 Each line represents a board that satisfies the three constraints. The indices correspond to the columns ranging from 0 to n - 1. The values correspond to the row placement from 0 to n - 1.
@@ -74,14 +56,3 @@ By the principle of grid collinearity if the arraylist contains any duplicate va
 If the arraylist contains no duplicate values, the method recurses and proceeds to calculate the rise divided by the run of q1 and q2, q1 and q3, q1 and q4, ... , q1 and q(n-1) and stores them in an empty arraylist data structure. The arraylist is once again checked for duplicate values.
 
 The process continues to recurse until a duplicate value is found.  If the method finds no duplicate values, the board has no queen placements that form a straight line at any angle and is added to the solution set. <h1>
-
-
-
-
-
-
-
-
-
-
-
